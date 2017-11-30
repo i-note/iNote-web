@@ -2,4 +2,4 @@
 web
 html
 css
-js
+JavaScript

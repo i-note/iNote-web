@@ -1,0 +1,97 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+     font-size: 14px;
+ }
+ 
+ @font-face {
+     font-family: 'leanote';
+     src: url('fonts/leanote.eot?h0qsb9');
+     src: url('fonts/leanote.eot?h0qsb9#iefix') format('embedded-opentype'), url('fonts/leanote.ttf?h0qsb9') format('truetype'), url('fonts/leanote.woff?h0qsb9') format('woff'), url('fonts/leanote.svg?h0qsb9#leanote') format('svg');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ .header {
+     width: 100%;
+     height: 50px;
+     background: #25313e;
+ }
+ 
+ .nav-header {
+     position: relative;
+     float: left;
+ }
+ 
+ .nav-brand {
+     color: #adbece;
+     text-align: center;
+     font-size: 14px;
+     line-height: 50px;
+     display: inline-block;
+     padding: 0 15px;
+     font-weight: bold;
+     text-decoration: none;
+ }
+ 
+ .logo {
+     font-family: 'leanote' !important;
+     speak: none;
+     font-style: normal;
+     font-weight: normal;
+     font-variant: normal;
+     text-transform: none;
+     -webkit-font-smoothing: antialiased;
+ }
+ 
+ .logo::before {
+     line-height: 38px;
+     font-size: 28px;
+     content: "\e901";
+     line-height: 1;
+     margin-top: 10px;
+     display: inline-block;
+     vertical-align: top;
+ }
+ 
+ .logo-title {
+     line-height: 50px;
+     font-size: 14px;
+ }
+ 
+ .logo-title::after {
+     display: table;
+     content: " ";
+     clear: both;
+ }
+ 
+ .nav {
+     float: right;
+ }
+ 
+ .nav li {
+     float: left;
+     list-style: none;
+ }
+ 
+ .nav li a {
+     text-decoration: none;
+     color: #adbece;
+     background-color: #25313e;
+     padding: 15px;
+     line-height: 20px;
+     position: relative;
+     display: block;
+ }
+ 
+ .nav li a:hover {
+     color: white;
+ }
+ 
+ .nav .img {
+     height: 30px;
+     max-width: 30px;
+     overflow: hidden;
+     border-radius: 50%;
+     margin: 10px 10px 0 0;
+ }
