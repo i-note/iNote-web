@@ -39,7 +39,7 @@
     </div>
     <section class="body">
         <div class="list">
-            <ul class="nav">
+            <ul class="nav" id="nav">
                 <li>
                     <a class="a" href="##">
                         <i class="fa">
@@ -79,24 +79,21 @@
     </section>
 
     <script>
-        var a = document.getElementsByClassName("a");
+        var ul = document.getElementById("nav");
         var i = document.getElementsByClassName("fa");
 
-        for (var i = 0; i < 3; i++) {
-            (function(num) {
-                a[i].addEventListener("mouseover", function() {
-                    a[i].style.background = "#f5f5f5";
-                    i[i].style.background = "#8ec165";
-                    i[i].style.color = "#fff";
-                });
-                a[i].addEventListener("mouseout", function() {
-                    a[i].style.background = "white";
-                    i[i].style.background = "white";
-                    i[i].style.color = "#a4a4a4";
-                })
-            })(i)
-
-        }
+        ul.addEventListener("mouseover", function(e) {
+            if (e.target && e.target.nodeName === "A") {
+                e.target.style.background = "#f5f5f5";
+                e.target.firstElementChild.style.background = "#8ec165";
+                e.target.firstElementChild.style.color = "#fff";
+            }
+        });
+        ul.addEventListener("mouseout", function(e) {
+            e.target.style.background = "white";
+            e.target.firstElementChild.style.background = "white";
+            e.target.firstElementChild.style.color = "#a4a4a4";
+        })
     </script>
 </body>
 
